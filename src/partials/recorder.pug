@@ -6,31 +6,31 @@ section.sh__recorder
                 source(srcset="images/logo.png?as=webp&width=400" type="image/webp")
                 source(srcset="images/logo.png?width=400" type="image/png")
                 img(src="images/logo.png?width=400" alt="test image")
-            h1.sh__logo--text Screen <span>REC</span> <sup style="font-weight:400;">βeta</sup>
+            h1.sh__logo--text Web Screen <span>REC</span>
 
         .sh__header
             h2.sh__header--title.outro
-                span Your video is ready to be exported
+                span 你的视频已准备好导出
             h2.sh__header--title.recording
-                span You are currently <span class="red--text">recording</span>
+                span 你当前正在进行 <span class="red--text">屏幕录制</span>
             h2.sh__header--title.intro
-                span A simple web screen recorder
+                span 一个网页端屏幕录制程序
 
         .sh__choice
             .sh__dropdown
                 button(type="button" class="sh__dropdown--btn")
                     img(class="sh__dropdown--icon camera" src=`./images/camera.svg`)
-                    span(class="sh__dropdown--defaultOption") Select the format of the output video
+                    span(class="sh__dropdown--defaultOption") 选择输出视频的格式
                     img(class="sh__dropdown--icon chevron" src=`./images/chevron-down.svg`)
                 ul.sh__dropdown__list
-                    li(class="sh__dropdown__list--item" data-value="webm") WebM - Optimized for web
-                    li(class="sh__dropdown__list--item" data-value="mp4") MP4 - Optimized for compatibility
+                    li(class="sh__dropdown__list--item" data-value="webm") WebM - 针对网络进行了优化
+                    li(class="sh__dropdown__list--item" data-value="mp4") MP4 - 针对兼容性进行了优化
 
-            input(type="text" class="sh__choice--filename" id="filename" placeholder="Name your recording")
+            input(type="text" class="sh__choice--filename" id="filename" placeholder="为你的视频命名")
 
             button(type="button" class="sh__btn record" id="start")
                 span.pulse
-                span I’m ready to record
+                span 开始
 
 
         .sh__video--wrp
@@ -41,4 +41,4 @@ section.sh__recorder
 
             a(class="sh__btn sh__download-btn" id="download")
                 img(class="sh__download-btn--icon" src=`./images/download.svg`)
-                span(class="sh__download-btn--text") Download now
+                span(class="sh__download-btn--text") 下载

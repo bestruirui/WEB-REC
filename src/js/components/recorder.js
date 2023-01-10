@@ -69,13 +69,13 @@ export default class recorderClass {
   appendStatusNotification(actionType) {
     const notificationText =
       actionType === "start"
-        ? "Started Recording"
+        ? "开始录制"
         : actionType === "stop"
-        ? "Stopped Recording"
+        ? "停止录制"
         : actionType === "pause"
-        ? "Paused Recording"
+        ? "暂停录制"
         : actionType === "resume"
-        ? "Resumed Recording"
+        ? "恢复录制"
         : "";
 
     this.set.toast.classList.add("active");
