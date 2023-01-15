@@ -1,10 +1,13 @@
-# Node.js template
+![image](https://user-images.githubusercontent.com/89796393/211823295-7bffdb6f-51a7-4f5d-a0bd-6e9910109581.png)
+# Web端屏幕录制程序
+Fork [heysagnik/screenREC](https://github.com/heysagnik/screenREC)
+## 本地开发
+#### 安装依赖
+```bash
+yarn install
 
-This is a Node.js project.
+yarn dev
+```
 
-Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) to optimize it for [CodeSandbox](https://codesandbox.io/p/dashboard).
-
-## Resources
-
-- [CodeSandbox Projects — Docs](https://codesandbox.io/docs/projects)
-- [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)# Node.js template
+## 部署在 Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bestruirui/WEB-REC)

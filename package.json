@@ -1,25 +1,35 @@
 {
-  "name": "templateforv2-static",
+  "name": "screenrec",
+  "description": "A really simple web screen recorder",
+  "author": "SAGNIK SAHOO",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "start": "nodemon index.js",
-    "build": "echo This is a static template, there is no bundler or bundling involved!"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
-  },
-  "keywords": [],
-  "author": "Ives van Hoorne",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "rm -rf .parcel-cache && rm -rf dist && parcel src/index.pug",
+    "build": "parcel build src/index.pug",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "test": "npm run check-format && npm run check-lint && npm run build",
+    "prepare": "husky install"
   },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@parcel/packager-raw-url": "^2.6.2",
+    "@parcel/transformer-pug": "^2.6.2",
+    "@parcel/transformer-sass": "^2.6.2",
+    "@parcel/transformer-webmanifest": "^2.6.2",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^7.0.0",
+    "parcel": "^2.6.2",
+    "prettier": "^2.4.1",
+    "sharp": "^0.29.2"
+  },
   "dependencies": {
-    "nodemon": "^2.0.20"
+    "@parcel/service-worker": "^2.8.2"
   }
 }
