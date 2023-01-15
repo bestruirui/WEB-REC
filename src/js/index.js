@@ -4,6 +4,11 @@ import { handleMobileUsers } from "./utils/handleMobileUsers";
 
 window.addEventListener("load", () => handleMobileUsers());
 
+navigator.serviceWorker.register(
+    new URL('sw.js', import.meta.url),
+    {type: 'module'}
+  );
+
 const screenRec = {};
 //instance
 screenRec.recorder = new recorderClass();
